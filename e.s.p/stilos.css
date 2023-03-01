@@ -1,0 +1,242 @@
+*{
+    font-family: 'Russo One', sans-serif;
+    font-family: 'Silkscreen', cursive;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(fondo.jpeg);
+
+}
+
+.redes{ 
+    background-image: url( cemento-amarillo-o-textura-y-fondo-del-muro-de-viejo-149137465.jpg);
+    display: flex;
+
+}
+
+.redes img{ 
+    padding: 8px;
+    width:40px;
+
+}
+
+.rd{
+    display: flex;
+    gap: 200px;
+
+}
+
+
+
+.rd img{
+    width: 192px;
+
+}
+/* */
+.menu{
+    background-image: url( m.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    font-size: 14.5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 4px solid yellow;
+}
+
+.buscador{
+    display: inline-block;
+    float: right;
+
+}
+
+.buscador select{ 
+    padding: 5px;
+    width: 100px;
+    border-radius: 30px;
+ } 
+
+.buscador input{
+    padding: 5px;
+    width: 190px;
+    background-color: rgb(241, 211, 39);
+    border-radius: 10px;
+}
+
+/**/
+
+h1{
+text-align: center;
+font-size: 18px;
+}
+/**/
+
+.slider{
+    margin: auto;
+    width: -400px;
+}
+
+.slider ul{
+display: flex;
+width: 500%;
+left: 26px;
+
+animation: cambio 10s infinite;
+animation-timing-function: ease-in;
+}
+
+.slider li{
+
+    width: 20%;
+    list-style: none;
+   
+}
+
+.slider img{
+    width: 200px;
+    
+}
+
+.slider h1{
+    font-size: 6px;
+}
+@keyframes cambio{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+/*footer*/
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    font-family: 'Nunito', sans-serif;
+    *background-color: var(--color-esqueleto);
+    background-image: url("../Images/background-footer.svg");
+    background-size: cover;
+
+    /*webkit-mask-image: url("../Images/background-footer.svg");
+    mask-image: url("../Images/background-footer.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;*/
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: -4em;
+}
+
+.box__footer .logo img{
+    width: 180px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: #242424;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 800px;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+@media screen and (max-width:800px)
+{
+    .redes{
+         justify-content: space-evenly;
+         height: 50px;
+    }
+
+    .menu{
+        height: 200px;
+        
+    }
+}
+
+@media (max-width: 576px) {
+    .container__footer {
+        flex-direction: column;
+    }
+
+    .menu a {
+        display: none;
+    }
+
+    .menu .buscador {
+        display: none;
+    }
+
+    .slider {
+        display: none;
+    }
+
+    .box__footer {
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+    }
+}
